@@ -1,0 +1,475 @@
+
+/* All */
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	width: 1400px;
+	margin: auto;
+	padding: 40px;
+}
+section, header, .navbar {
+	min-width: 1400px
+}
+.float {
+	float:left
+}
+.clearfloat {
+	clear: both
+}
+hr.separator {
+	border: 1px solid rgba(200, 200, 200, 0.3);
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+hr.footer_separator {
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	margin-bottom: 20px;
+	margin-right: 20px
+}
+
+
+/* Start navbar */
+
+.navbar {
+	height: 0px;
+	color: #FFF;
+	position: relative;
+	z-index: 999
+}
+.navbar h1 {
+	display: inline;
+	font-size: 50px;
+	width: 30%;
+	text-transform: uppercase;
+
+}
+.navbar h1:first-letter {
+	color:darkturquoise;
+}
+.navbar ul {
+	list-style: none;
+	width: 70%;
+	text-align: right;
+	margin-top: 9px;
+}
+.navbar ul li {
+	margin: 10px;
+	display: inline-block;
+	font-size: 25px;
+}
+.navbar ul li a {
+	color: #fff;
+	text-decoration: none
+}
+.navbar ul li a:hover {
+	border-bottom: 2px solid darkturquoise
+}
+.navbar ul li.active a {
+	color:darkturquoise;
+	border-bottom: 2px solid darkturquoise
+}
+
+/* End navbar */
+
+
+/* Start header */
+
+header {
+	background-image: url(../images/header2.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	height: 700px;
+	/*width: 1500px;*/
+	margin: auto
+}
+header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+/* boxslider */
+header .bx-wrapper {
+	height: 100%;
+	background: none;
+	border: 0
+}
+header .bx-wrapper .bx-viewport {
+	box-shadow: none;
+	border: 0;
+	background: none;
+	height: 100% !important
+}
+header .slider {
+	color: #fff;
+	text-align: center;
+	height: 100%
+}
+header .slider h3 {
+	color: darkturquoise;
+	font-size: 30px;
+	
+}
+header .slider p {
+	font-size: 20px;
+	font-family: sans-serif, monospace
+}
+
+
+/* End header */
+
+/* Start all sections */
+
+section {
+	/*height: 1000px;*/
+	/*margin-top: 20px;*/
+}
+section h3 {
+	width: fit-content;
+	font-size: 30px;
+	position: relative;
+	margin-bottom: 20px;
+	font-weight: bold
+	
+}
+section h3 span {
+    background: darkturquoise;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    height: 5px;
+    width: 0%;
+}
+
+/* Start section our services */
+
+#our_services h3 {
+	margin-bottom: 50px
+}
+.services .item {
+	width:30%;
+	margin-top: 20px;
+	margin-right: 3.3333%;
+}
+.services .item:hover .info p {
+	color: #333
+}
+.services .item i {
+	color:darkturquoise;
+	width:20%;
+	margin-right: 5%
+}
+.services .item .info {
+	width:75%;
+}
+.services .item .info h2 {
+	color: #333;
+	margin-bottom: 5px;
+	
+}
+.services .item .info p {
+	color:#888;
+	
+}
+/* End section our services */
+
+/* Start section our team */
+.team .item {
+	margin-top: 15px;
+}
+.team .item:first-child {
+	width:30%;
+	
+}
+
+.team .item:not(:first-child) {
+	width:15%;
+	height: 200px;
+	margin-left: 2.5%;
+	position: relative;
+	-webkit-transition : all .4s ease-in-out;
+	-moz-transition : all .4s ease-in-out;
+	-o-transition : all .4s ease-in-out;
+	transition : all .4s ease-in-out;
+}
+.team .item:not(:first-child) img {
+	width: 100%;
+	height: 100%;
+}
+.team .item:not(:first-child) .imglayout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: rgba(0, 206, 209, 0.8);
+	
+}
+.team .item:not(:first-child) .imglayout p {
+	text-align: center;
+    padding: 85px 15px;
+    color: #FFF;
+    font-size: 50px;
+    font-family: sans-serif, cursive;
+	transform: rotate(-45deg)
+}
+.team .item:not(:first-child):hover .imglayout {
+	display: block;
+}
+
+.team .item  h2 {
+	margin-bottom: 15px;
+	color: #333;
+}
+.team .item  p {
+	line-height: 26px;
+	color:#888;
+}
+
+/* End section our team*/
+
+
+/*Start section our testemonials*/
+.testimonials {
+	background-image: url(../images/header3.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	position: relative
+}
+
+.testlayout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1
+}
+.testimonials h3 {
+	color:#FFF;
+}
+
+.testimonials .info{
+	text-align: center;
+	margin: 60px auto;
+	color: #FFF;
+	z-index: 2;
+	font-size: 30px;
+}
+.testimonials .info h2 {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.testimonials .info h2:first-letter {
+	color: darkturquoise;
+}
+.testimonials .info p {
+	color: darkturquoise;
+	margin-top: 30px
+}
+.testimonials .info > div {
+	display: none;
+	margin-top: 80px;
+}
+
+
+/*End section our testemonials*/
+
+/*Start section our works */
+
+.works .navbar_works ul li {
+	display: inline-block;
+	list-style: none;
+	border: 1px solid #AAA;
+	margin: 20px 10px 20px;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer
+}
+.works .navbar_works ul li.selected {
+	background-color: darkturquoise;
+	color: #fff;
+}
+.works .gallery .row {
+	margin-bottom: 20px;
+}
+.works .gallery .row > div:not(:last-child) {
+	width: 18%;
+	height: 240px;
+	margin-right: 2.5%;
+	position: relative;
+	-webkit-transition : all .4s ease-in-out;
+	-moz-transition : all .4s ease-in-out;
+	-o-transition : all .4s ease-in-out;
+	transition : all .4s ease-in-out;
+	
+}
+.works .gallery .row > div.last {
+	margin-right: 0;
+}
+.works .gallery .row > div img {
+	width: 100%;
+	height: 100%
+	}
+.works .gallery .row > div .imglayout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 206, 209, 0.8);
+	display: none
+}
+.works .gallery .row > div .imglayout input {
+	text-align: center;
+    margin: 96px 50px;
+	padding: 10px;
+	cursor: pointer;
+    color: #AAA;
+    font-size: 20px;
+    font-family: sans-serif, cursive;
+}
+.works .gallery .row > div:not(:last-child):hover .imglayout {
+	display: block
+}
+.works .gallery .mix {
+	display: none
+}
+
+/*End section our works */
+
+/*Start section contact us */
+/*.contact {
+	height: 330px
+}
+.contact p {
+	font-size: 20px;
+	margin: 30px 0px
+}
+.contact .call .social-media i {
+	padding: 10px;
+	border: 1px solid #CCC;
+	margin:10px 10px 10px 0px;
+	cursor: pointer
+}
+.contact .call {
+	float: left;
+	height: 100%;
+	width: 30%;
+}
+.contact .call i {
+	margin: 0px 100px 20px 0px;
+}
+.contact .image {
+	float: left;
+	height: 100%;
+	width: 65%;
+	margin-left: 5%;
+	overflow: hidden
+}
+.contact .image img {
+	
+	width: 100%
+}*/
+/*.contact .call > div {
+	display: none
+}*/
+/*End section contact us */
+
+/*Start Footer*/
+#our_footer {
+	background-color: #333;
+	color: #DDD;
+}
+.footer {
+	height: 500px;
+
+}
+.footer > div:not(:last-child){
+	border-right: 1px solid rgba(100, 100, 100, 0.3);
+	width: 23.5%;
+	height: 500px;
+	margin-right: 2%
+}
+.footer > div.contact {
+	margin-right: 0
+}
+.footer .basic p{
+	font-size: 20;
+	color: #AAA;
+	line-height: 25px
+}
+.footer button{
+	margin: 10px 10px 10px 0px;
+	padding: 10px;
+	background-color: #DDD;
+	color:#333;
+	cursor: pointer
+}
+.footer .recent_posts .img {
+	width: 100px;
+	height: 100px;
+	width: 55%;
+	margin-right: 5%
+}
+.footer .recent_posts .img img {
+	width: 100%;
+	height: 100%
+}
+.footer .recent_posts .info {
+	width: 40%;
+}
+.footer .recent_posts > div {
+	height: 100px;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.footer .recent_posts .info p {
+	color: #AAA;
+	margin-top: 10px;
+}
+.footer .contact p {
+	font-size: 20px;
+	margin: 30px 0px
+}
+.footer .contact .call .social-media i {
+	
+	margin:10px 20px 10px 0px;
+	cursor: pointer
+}
+.footer .contact .call i {
+	margin: 0px 100px 20px 0px;
+}
+.footer .contact .call a {
+	color:#DDD;
+	text-decoration: none
+}
+#copywrite {
+	text-align: center;
+	font-size: 20px;
+	color: #AAA
+}
+/*End Footer*/
